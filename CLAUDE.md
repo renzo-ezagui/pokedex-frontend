@@ -39,10 +39,10 @@ coolify app deploy qaz0nymagqc7co9cle6ub8vy
 coolify app logs qaz0nymagqc7co9cle6ub8vy
 ```
 
-### Caddy vhost (public domain)
+### Public domain routing
 
-Same note as backend CLAUDE.md — `pokedex.ezagui.dev` needed an explicit vhost added
-to `services/caddy/Caddyfile` (the `*.lan` wildcard doesn't cover it).
+`pokedex.ezagui.dev` routes through Traefik's own `*.lan`/`*.ezagui.dev` wildcard —
+no per-domain config needed.
 
 ## Skills recomendadas
 
